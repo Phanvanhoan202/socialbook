@@ -1,0 +1,93 @@
+/* PC */
+@media (min-width: 64em)
+{
+    .imp-links-menu{
+        display: none;
+    }
+}
+
+/* TABLET && MOBILE */
+@media (max-width:63.9375em)
+{   
+    .nav-left ul {
+        display: none;
+        padding-left: 0;
+    }    
+    
+   
+
+}
+
+
+
+
+/* TABLET */
+@media (min-width: 46.25em) and (max-width:63.9375em)
+{
+    .settings-menu{
+        right:17%;
+    }
+   
+   
+}
+
+
+
+/* MOBILE */
+@media (max-width: 46.1875em)
+{  
+    *{
+        -webkit-tap-highlight-color: transparent;
+    }
+    .app{
+        position: relative;
+    }
+    .container{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .nav{
+        padding: 10px 4px;
+        flex-direction: column;
+
+    }
+    .logo{
+        margin-left: 15px;
+        margin-right: unset;
+    }
+    .nav-left ul {
+        display: flex;
+        
+    } 
+    .settings-menu{
+        top: 100%;
+    } 
+    .nav-right,
+    .nav-left{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .icon-bars{
+        display: block;
+        margin-right: 17px;
+    }
+    
+    .search-box{    
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 15px;
+    }
+    .nav-user-avt{
+        margin-top: 8px;
+    }
+    .story img{
+        width: 32px;
+        border: 2px solid var(--primary-color);
+    }
+    .add-post-links{
+        flex-wrap: wrap;
+    }
+    .add-post-links a{
+        margin-top: 12px;
+    }
+}

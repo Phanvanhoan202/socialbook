@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <div class="app">
+        <nav>
+            <div class="grid wide">
+                <div class="nav">
+                    <div class="nav-left">
+                        <img src="./assets/img/logo.png" alt="" class="logo">
+                        <ul>
+                            <li> 
+                                <img src="./assets/img/notification.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/inbox.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./assets/img/video.png" alt="">
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="nav-right">
+                        <div class="search-box">
+                            <img src="./assets/img/search.png" alt="">
+                            <input type="text" name="" id="" placeholder="Search">
+                        </div>
+                        <div class="nav-user-avt online">
+                            <img src="./assets/img/avt.jpg" alt="" onclick="onSettingsMenu()">
+                        </div>
+
+                        <label for="icon-bars-checkbox" class="icon-bars">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <input type="checkbox" hidden name="" class="input-bars-checked" id="icon-bars-checkbox">
+                            
+                            <div class="imp-links-menu">
+                                <a href="#"><img src="./assets/img/news.png" alt=""> Latest News</a>
+                                <a href="#"><img src="./assets/img/friends.png" alt=""> Friends</a>
+                                <a href="#"><img src="./assets/img/group.png" alt=""> Group</a>
+                                <a href="#"><img src="./assets/img/marketplace.png" alt=""> Latest News</a>
+                                <a href="#"><img src="./assets/img/watch.png" alt=""> Latest News</a>
+                                <a href="#"> See More </a>
+                            </div>
+                            
+                           
+                    </div>
+
+                    <!-- SETTING MENU -->
+                    <div class="settings-menu">
+                        <div class="settings-menu-inner">
+                            <div id="dark-btn" class="">
+                                <span></span>
+                            </div>
+                            <div class="user-profile">
+                                <img src="./assets/img/avt.jpg" alt="">
+                                <div>
+                                    <p>Phan Văn Hoàn</p>
+                                    <a href="#"> See your profile</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="user-profile">
+                                <img src="./assets/img/feedback.png" alt="">
+                                <div>
+                                    <p>Give Feeback</p>
+                                    <a href="#"> Help us to improve the new design</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="settings-links">
+                                <img src="./assets/img/setting.png" alt="" class="settings-icon">
+                                <a href="#">Setting & Privacy <img src="./assets/img/arrow.png" alt="" width="10px"></a>
+                            </div>
+                            <div class="settings-links">
+                                <img src="./assets/img/help.png" alt="" class="settings-icon">
+                                <a href="#">Help & Support <img src="./assets/img/arrow.png" alt="" width="10px"></a>
+                            </div>
+                            <div class="settings-links">
+                                <img src="./assets/img/display.png" alt="" class="settings-icon">
+                                <a href="#">Display & Accessibility <img src="./assets/img/arrow.png" alt="" width="10px"></a>
+                            </div>
+                            <div class="settings-links">
+                                <img src="./assets/img/logout.png" alt="" class="settings-icon">
+                                <a href="#">Logout <img src="./assets/img/arrow.png" alt="" width="10px"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-0 c-0"> 
+                        <div class="left-sidebar"> 
+                            <div class="imp-links">
+                                <a href="#"><img src="./assets/img/news.png" alt=""> Latest News</a>
+                                <a href="#"><img src="./assets/img/friends.png" alt=""> Friends</a>
+                                <a href="#"><img src="./assets/img/group.png" alt=""> Group</a>
+                                <a href="#"><img src="./assets/img/marketplace.png" alt=""> Latest News</a>
+                                <a href="#"><img src="./assets/img/watch.png" alt=""> Latest News</a>
+                                <a href="#"> See More </a>
+                            </div>
+                            <div class="shortcut-links">
+                                <p>Your Shortcuts</p>
+                                <a href="#"><img src="./assets/img/shortcut-1.png" alt=""> Web Developers</a>
+                                <a href="#"><img src="./assets/img/shortcut-2.png" alt=""> Web Desgin course</a>                         
+                                <a href="#"><img src="./assets/img/shortcut-3.png" alt=""> Full Stack Development</a>                         
+                                <a href="#"><img src="./assets/img/shortcut-4.png" alt=""> Website Experts</a>                         
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12 ">
+                        <div class="main-content">
+                            <div class="story-gallery">
+                                <div class="story" style="background:linear-gradient(transparent,rgba(0,0,0,0.5)), url(./assets/img/avt.jpg);">
+                                    <img src="./assets/img/upload.png" alt="">
+                                    <p>Post Story</p>
+                                </div>
+                                <div class="story" style=" background:linear-gradient(transparent,rgba(0,0,0,0.5)), url(./assets/img/status-2.png);">
+                                    <img src="./assets/img/member-1.png" alt="">
+                                    <p>Alison</p>
+                                    
+                                </div>
+                                <div class="story" style=" background:linear-gradient(transparent,rgba(0,0,0,0.5)), url(./assets/img/status-3.png);">
+                                    <img src="./assets/img/member-2.png" alt="">
+                                    <p>Jackson</p>
+                                    
+                                </div>
+                                <div class="story" style=" background:linear-gradient(transparent,rgba(0,0,0,0.5)), url(./assets/img/status-4.png);">
+                                    <img src="./assets/img/member-3.png" alt="">
+                                    <p>Samona</p>
+                                    
+                                </div>
+                                <div class="story" style=" background:linear-gradient(transparent,rgba(0,0,0,0.5)), url(./assets/img/status-5.png);">
+                                    <img src="./assets/img/member-4.png" alt="">
+                                    <p>John Doe</p>
+                                    
+                                </div>
+                            </div>
+
+                            <div class="write-post-container">
+                                
+                                <div class="user-profile">
+                                    <img src="./assets/img/avt.jpg" alt="">
+                                    <div>
+                                        <p>Phan Văn Hoàn</p>
+                                        <small>  Public <i class="fas fa-sort-down"></i> </small>
+                                    </div>
+                                </div>
+                                <div class="post-input-container">
+                                    <textarea name="" id=""  rows="3" placeholder="What's on your mind, Hoàn?"></textarea>
+                                    <div class="add-post-links">
+                                        <a href=""> 
+                                            <img src="./assets/img/live-video.png" alt="">
+                                            <span>Live Video</span>
+                                        </a>
+                                        <a href=""> 
+                                            <img src="./assets/img/photo.png" alt="">
+                                            <span>Photo/Video</span>
+                                        </a>
+                                        <a href=""> 
+                                            <img src="./assets/img/feeling.png" alt="">
+                                            <span>Feling/Activity</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- POST -->                        
+                            <div class="post-container">
+
+                                <div class="post-row">
+                                    <div class="user-profile">
+                                        <img src="./assets/img/avt.jpg" alt="">
+                                        <div>
+                                            <p>Phan Văn Hoàn</p>
+                                            <span> November 15 2021, 16:50 pm</span>
+                                        </div>
+                                </div>
+                                <a href="#">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </a>
+                                </div>
+                                <p class="post-text"> <span>@Phan Văn Hoàn</span>  đã thêm một ảnh. <a href="#">#Phan Văn Hoàn</a></p>
+                                <img src="./assets/img/post-1.jpg" alt="" class="post-img">
+                            <div class="post-row">
+                                <div class="activity-icon">
+                                    <div><img src="./assets/img/like-blue.png" alt=""><span>190</span></div>
+                                    <div><img src="./assets/img/comments.png" alt=""> <span>80</span> </div>
+                                    <div><img src="./assets/img/share.png" alt=""><span> 10</span></div>
+                                </div>
+                                <div class="post-profile-icon">
+                                    <img src="./assets/img/avt.jpg" alt=""><i class="fas fa-sort-down"></i>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="post-container">
+                                <div class="post-row">
+                                    <div class="user-profile">
+                                        <img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/180821566_514826446395639_7215036949686485217_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=gUC-mR9JHx8AX_f49Tw&_nc_ht=scontent.fdad2-1.fna&oh=09cf74c24391553a231edbb03e6b35e8&oe=61976D9A" alt="">
+                                        <div>
+                                            <p>Nguyên Nguyên</p>
+                                            <span> November 16 2021, 16:50 pm</span>
+                                        </div>
+                                    </div>
+                                    <a href="#">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </a>
+                                </div>
+                                
+                            <p class="post-text"> <span>@Phan Văn Hoàn</span>  đã thêm một ảnh. <a href="#">#Phan Văn Hoàn</a></p>
+                            <img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.6435-9/186466762_487577452453872_6000418985566429853_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=4hDgxn4m84QAX9cOMfb&tn=VnaFIh4ckw_s_LAe&_nc_ht=scontent.fdad2-1.fna&oh=cac4ea3a08eb8bd08dd276bf7a1868ca&oe=61B72EFF" alt="" class="post-img">
+                            <div class="post-row">
+                                <div class="activity-icon">
+                                    <div><img src="./assets/img/like.png" alt=""><span>190</span></div>
+                                    <div><img src="./assets/img/comments.png" alt=""> <span>80</span> </div>
+                                    <div><img src="./assets/img/share.png" alt=""><span> 10</span></div>
+                                </div>
+                                <div class="post-profile-icon">
+                                    <img src="https://scontent.fdad1-1.fna.fbcdn.net/v/t1.6435-9/187636799_484310276113923_6940539277468365744_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=gYs5kVwPzB4AX9qUzJw&_nc_ht=scontent.fdad1-1.fna&oh=2cd5d73d2ddbfad270c5f7e7fdcb5b35&oe=61B85A8A" alt=""><i class="fas fa-sort-down"></i>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="post-container">
+                                <div class="post-row">
+                                    <div class="user-profile">
+                                        <img src="./assets/img/avt.jpg" alt="">
+                                        <div>
+                                            <p>Phan Văn Hoàn</p>
+                                            <span> November 15 2021, 16:50 pm</span>
+                                        </div>
+                                    </div>
+                                    <a href="#">
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </a>
+                                </div>
+                                <p class="post-text"> <span>@Phan Văn Hoàn</span>  đã thêm một ảnh. <a href="#">#Phan Văn Hoàn</a></p>
+                                <img src="https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/214373371_3014470162131123_3988599560360522537_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=rbkCw3ePvAQAX_ZCVRl&_nc_ht=scontent.fdad1-2.fna&oh=361bc64beda3e6c492e01871d1b3bfb9&oe=61987650" alt="" class="post-img">
+                                <div class="post-row">
+                                    <div class="activity-icon">
+                                        <div><img src="./assets/img/like-blue.png" alt=""><span>190</span></div>
+                                        <div><img src="./assets/img/comments.png" alt=""> <span>80</span> </div>
+                                        <div><img src="./assets/img/share.png" alt=""><span> 10</span></div>
+                                    </div>
+                                    <div class="post-profile-icon">
+                                        <img src="./assets/img/avt.jpg" alt=""><i class="fas fa-sort-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="load-more-btn">
+                                Load More
+                            </button>
+                            
+                        </div> 
+
+                    </div>
+                    <div class="col l-3 m-0 c-0 ">
+                        <div class="right-sidebar">
+                            <div class="sidebar-title">
+                                <h4>Events</h4>
+                                <a href="">See All</a>
+                            </div>
+
+                            <div class="event">
+                                <div class="left-event">
+                                    <h3>18</h3>
+                                    <span> March</span>
+                                </div>
+                                <div class="right-event">
+                                    <h4>Social Media</h4>
+                                    <p> <i class="fas fa-map-marker-alt"></i> Wilison Tech Park</p>
+                                    <a href="#">More info</a>
+                                </div>
+                            </div>
+
+                            <div class="event">
+                                <div class="left-event">
+                                    <h3>22</h3>
+                                    <span> June</span>
+                                </div>
+                                <div class="right-event">
+                                    <h4>Mobile Marketing</h4>
+                                    <p> <i class="fas fa-map-marker-alt"></i> Wilison Tech Park</p>
+                                    <a href="#">More info</a>
+                                </div>
+                            </div>
+
+                            <div class="sidebar-title">
+                                <h4>Advertisement </h4>
+                                <a href="">Close</a>
+                            </div>
+                            <img src="./assets/img/advertisement.png" alt="" class="sidebar-ads">
+
+                            <div class="sidebar-title">
+                                <h4>Conversation </h4>
+                                <a href="">Hide chat</a>
+                            </div>
+                            <div class="online-list">
+                                <div class="online">
+                                    <img src="./assets/img/member-1.png" >
+                                </div>
+                                <p>Alison Mina</p>
+                            </div>
+                            
+                            <div class="online-list">
+                                <div class="online">
+                                    <img src="./assets/img/member-2.png" >
+                                </div>
+                                <p>Jackson Aston</p>
+                            </div>
+                            <div class="online-list">
+                                <div class="online">
+                                    <img src="./assets/img/member-3.png" >
+                                </div>
+                                <p>Samora Rose</p>
+                            </div>
+
+                        
+                        </div>
+                    
+
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Copyright @Hoan 2021
+        </div>
+    </div>   
+</body>
+    <script src="./assets/js/script.js"></script>
+
+</html>
